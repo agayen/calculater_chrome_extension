@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Nice Calculator</title>
+    <style>
+        body {
+            min-width: 350px;
+            min-height: 520px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f5f5f5;
+        }
+
+        .calculator {
+            width: 350px;
+            height: 520px;
+            background-color: #fff;
+            overflow: hidden;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .cal-display{
+            /* background-color: #A9A9A9; */
+            overflow: hidden;
+            margin: 10px;
+        }
+
+        .cal-keys{
+           margin-top: 8px; 
+        }
+
+        #display {
+            width: 94%;
+            font-size: 1.7em;
+            border: none;
+            outline: none;
+            text-align: right;
+            padding:0px 3%;
+            height: 80px;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.274) inset;
+        }
+
+        .button {
+            width: 70px;
+            height: 70px;
+            margin: 5px;
+            font-size: 1.4em;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 25px;
+        }
+
+        .button.orange {
+            background-color: #FFA500;
+        }
+
+        .button.gray {
+            background-color: #A9A9A9;
+        }
+
+        .button.double {
+            width: 155px;
+        }
+
+        .button.ac {
+            background-color: #f74403da;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="cal-display">
+            <input type="text" id="display" readonly>
+        </div>
+        <div class="cal-keys">
+            <button class="button gray" id="clearBtn">AC</button>
+            <button class="button orange" id="add/">/</button>
+            <button class="button orange" id="add*">*</button>
+            <button class="button orange" id="add-">-</button>
+            <button class="button" id="add1">1</button>
+            <button class="button" id="add2">2</button>
+            <button class="button" id="add3">3</button>
+            <button class="button orange" id="add+">+</button>
+            <button class="button" id="add4">4</button>
+            <button class="button" id="add5">5</button>
+            <button class="button" id="add6">6</button>
+            <button class="button orange" id="calculate">=</button>
+            <button class="button" id="add7">7</button>
+            <button class="button" id="add8">8</button>
+            <button class="button" id="add9">9</button>
+            <button class="button" id="add.">.</button>
+            
+            <button class="button double" id="add0">0</button>
+            <button class="button double ac" id="delete">
+                <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 9L11 15M11 9L17 15M2.72 12.96L7.04 18.72C7.392 19.1893 7.568 19.424 7.79105 19.5932C7.9886 19.7432 8.21232 19.855 8.45077 19.9231C8.72 20 9.01334 20 9.6 20H17.2C18.8802 20 19.7202 20 20.362 19.673C20.9265 19.3854 21.3854 18.9265 21.673 18.362C22 17.7202 22 16.8802 22 15.2V8.8C22 7.11984 22 6.27976 21.673 5.63803C21.3854 5.07354 20.9265 4.6146 20.362 4.32698C19.7202 4 18.8802 4 17.2 4H9.6C9.01334 4 8.72 4 8.45077 4.07689C8.21232 4.14499 7.9886 4.25685 7.79105 4.40675C7.568 4.576 7.392 4.81067 7.04 5.28L2.72 11.04C2.46181 11.3843 2.33271 11.5564 2.28294 11.7454C2.23902 11.9123 2.23902 12.0877 2.28294 12.2546C2.33271 12.4436 2.46181 12.6157 2.72 12.96Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

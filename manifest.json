@@ -1,0 +1,11 @@
+{
+    "name": "calculator",
+    "version": "1.0.0",
+    "description": "Making calculator for web-browser",
+    "manifest_version": 3,
+    "author": "Abhijit Gayen",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Latest Covid Report"
+    }
+}
